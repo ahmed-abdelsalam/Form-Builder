@@ -1,0 +1,28 @@
+.layout-builder .react-resizable-handle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    bottom: 0.4rem !important;
+    right: 0.4rem !important;
+    z-index: 5000;
+    cursor: se-resize !important;
+    /* -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%); */
+    clip-path: none;
+    background: repeating-linear-gradient( 315deg, hsla(0, 0%, 100%, 0) 3px, hsla(0, 0%, 100%, 0) 6px, #000 0px, #000 7px);
+    border-radius: 4px;
+}
+
+.layout-builder .react-resizable-handle::after {
+    display: none;
+}
+
+.react-grid-item.react-draggable-dragging,
+.react-grid-item.dropping,
+.react-grid-item.react-grid-placeholder {
+    background: #0000000d !important;
+    border-radius: 5px !important;
+}
+
+.layout-builder {
+    min-height: 60%;
+}
